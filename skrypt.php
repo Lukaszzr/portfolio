@@ -1,12 +1,28 @@
-
 <?php
-$to      = 'lukaszrozdzynskii@gmail.com';
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = 'Nowy e-mail od' . $name . '(' . $email . ')';
-$message = $_POST['message'];
-$headers  = 'From: ' . $name . '(' . $email . ')';
-$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+  if (isset($_REQUEST['email']))  {
+  
 
-mail($to, $subject, $message, $headers);
-?> 
+  $admin_email = "lukaszrozdzynskii@gmail.com";
+  $email = $_REQUEST['email'];
+  $name = $_REQUEST['name'];
+  $message = $_REQUEST['message'];
+  
+  mail($admin_email, $name, $message, "From:" . $email);
+
+  echo "Dziękuje za kontakt !";
+  }
+  
+  else  {
+?>
+
+ <form method="post">
+  Email: <input name="email" type="text" /><br />
+  Temat: <input name="subject" type="text" /><br />
+  Wiadomość:<br />
+  <textarea name="comment" rows="15" cols="40"></textarea><br />
+  <input type="submit" value="Wyślij" />
+  </form>
+  
+<?php
+  }
+?>
