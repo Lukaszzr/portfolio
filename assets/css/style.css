@@ -376,9 +376,9 @@ header {
     line-height: 67px;
   }
   /******** header ********/
-  .header__content {
-    /* left: 18%; */
-  }
+  /* .header__content {
+    left: 18%;
+  } */
   .header__title {
     font-size: 60px;
   }
