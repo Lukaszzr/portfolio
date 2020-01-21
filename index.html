@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <title>Łukasz Rożdżyński-Portfolio</title>
+    <link rel="stylesheet" href="assets/font-awesome/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <span class="logo">
+        <img class="logo__image" src="/favicon1-32x32.png" alt=""
+      /></span>
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link scroll" href="#header"
+            ><i class="fa fa-home" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link scroll" href="#about"
+            ><i class="fa fa-user" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link scroll" href="#skills"
+            ><i class="fa fa-cog" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link scroll" href="#contact"
+            ><i class="fa fa-envelope-o" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+      <ul class="menu-icons">
+        <li class="menu-icons__icon">
+          <a href="mailto:lukaszrozdzynskii@gmail.com"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </li>
+        <li class="menu-icons__icon">
+          <a href=""
+            ><i class="fa fa-google-plus-official" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+
+      <div class="mobile-button">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+    <header class="header" id="header">
+      <div class="header__content text-center">
+        <h1 class="header__title">Czesc <span>tu Łukasz</span></h1>
+        <p class="header__description ">front-end developer</p>
+      </div>
+    </header>
+    <section class="about py-5" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center py-5">
+            <h1 class="about__title"><span class="capital-letter">A</span class="capital-letter">bout me</h1>
+          </div>
+          <div class="col d-flex flex-column flex-md-row">
+            <p class="about__description">
+              Cześć Mam na imię Łukasz. Zajmuję się tworzeniem nowoczesnych
+              stron internetowych w oparciu o technologie HTML, CSS i
+              JavaScript.
+            </p>
+            <p class="about__description">
+              Swoją karierę zawodową jako Front-End Developera rozpocząłem na
+              stanowisku junior front-end developer w jednym z Krakowskich
+              Softwarehouse. Wspomniane stanowisko pozwoliło mi wzięcie udziału
+              w wielu ciekawych projektach prowadzonych dla różnych klientów z
+              polski i zagranicy. Miałem przyjemność poznać ciekawych ludzi i
+              wiele się nauczyć.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills py-5" id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="skills__title">
+              <span class="capital-letter">S</span>kills
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-7 offset-md-3 py-5">
+            <div class="skills__elements">
+              <ul>
+                <li class="skills__element"><span>html5</span></li>
+                <li class="skills__element"><span>css3</span></li>
+                <li class="skills__element"><span>javascript</span></li>
+                <li class="skills__element"><span>es6</span></li>
+                <li class="skills__element"><span>jquery</span></li>
+                <li class="skills__element"><span>bootstrap</span></li>
+                <li class="skills__element"><span>react.js</span></li>
+                <li class="skills__element"><span>styled-components</span></li>
+                <li class="skills__element"><span>wordpress</span></li>
+                <li class="skills__element"><span>rwd</span></li>
+                <li class="skills__element"><span>sass</span></li>
+                <li class="skills__element"><span>npm</span></li>
+                <li class="skills__element"><span>git</span></li>
+                <li class="skills__element"><span>jira</span></li>
+                <li class="skills__element"><span>photoshop</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact py-5" id="contact">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="contact__title text-white mb-5 ">
+              <span class="capital-letter">c</span>ontact
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <form
+              class="form "
+              action="skrypt.php"
+              method="POST"
+              id="contact-form"
+            >
+              <div class="form-group">
+                <!-- <label class="text-white" for="exampleInputName">Name</label> -->
+                <input
+                  type="text"
+                  name="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-group">
+                <!-- <label class="text-white" for="exampleInputEmail">Email </label> -->
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="form-group">
+                <!-- <label for="textarea" class="text-white" id="message"
+                  >Message</label
+                > -->
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                  placeholder="Text"
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center">
+            <span class="footer__title">&copy 2019 Łukasz Rożdżyński</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
