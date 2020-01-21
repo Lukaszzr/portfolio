@@ -418,9 +418,9 @@ header {
     cursor: pointer;
   }
   /******** header ********/
-  .header__content {
-    /* left: 10%; */
-  }
+  /* .header__content {
+    left: 10%;
+  } */
   .header__title {
     font-size: 40px;
   }
