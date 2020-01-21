@@ -1,9 +1,9 @@
 <?php
-$header  = "From: www.krzysztof-siek.pl \r\n";
+$header  = "From: https://lukaszzr.github.io/portfolio/. \r\n";
 $header .= 'MIME-Version: 1.0'."\r\n";
 $header .= 'Content-type: text/html; charset=UTF-8'."\r\n";
-$to      = 'dalimibiszkopta@gmail.com';
-$subject = 'Wiadomość ze strony www.krzysztof-siek.pl';
+$to      = 'lukaszrozdzynskii@gmail.com';
+$subject = 'Wiadomość ze strony https://lukaszzr.github.io/portfolio/.';
 $from = $_POST['email'];
 $name = $_POST['name'];
 $email=$_POST['email'];
