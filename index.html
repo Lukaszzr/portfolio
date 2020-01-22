@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
       rel="stylesheet"
@@ -17,7 +17,7 @@
   <body>
     <nav class="nav-bar">
       <span class="logo">
-        <img class="logo__image" src="/favicon1-32x32.png" alt=""
+        <img class="logo__image" src="assets/logo.png" alt=""
       /></span>
       <ul class="menu">
         <li class="menu__item">
@@ -43,15 +43,14 @@
       </ul>
       <ul class="menu-icons">
         <li class="menu-icons__icon">
-          <a href="mailto:lukaszrozdzynskii@gmail.com"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a class="menu-icons__link"href="https://github.com/Lukaszzr"><i class="fa fa-github" aria-hidden="true"></i></a>
         </li>
         <li class="menu-icons__icon">
-          <a href=""
+          <a class="menu-icons__link"href="mailto: lukaszrozdzynskii@gmail.com"
             ><i class="fa fa-google-plus-official" aria-hidden="true"></i
           ></a>
         </li>
       </ul>
-
       <div class="mobile-button">
         <i class="fa fa-bars"></i>
       </div>
@@ -66,7 +65,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center py-5">
-            <h1 class="about__title"><span class="capital-letter">A</span class="capital-letter">bout me</h1>
+            <h1 class="about__title"><span class="capital-letter">O</span class="capital-letter">mnie</h1>
           </div>
           <div class="col d-flex flex-column flex-md-row">
             <p class="about__description">
@@ -91,7 +90,7 @@
         <div class="row">
           <div class="col text-center">
             <h1 class="skills__title">
-              <span class="capital-letter">S</span>kills
+              <span class="capital-letter">U</span>miejętności
             </h1>
           </div>
         </div>
@@ -124,8 +123,8 @@
       <div class="container py-5">
         <div class="row">
           <div class="col text-center">
-            <h1 class="contact__title text-white mb-5 ">
-              <span class="capital-letter">c</span>ontact
+            <h1 class="contact__title mb-5 ">
+              <span class="capital-letter">K</span>ontakt
             </h1>
           </div>
         </div>
@@ -133,12 +132,9 @@
           <div class="col">
             <form
               class="form "
-              action="skrypt.php"
-              method="POST"
               id="contact-form"
             > 
               <div class="form-group">
-                <!-- <label class="text-white" for="exampleInputName">Name</label> -->
                 <input
                   type="text"
                   name="name"
@@ -148,20 +144,16 @@
                 />
               </div>
               <div class="form-group">
-                <!-- <label class="text-white" for="exampleInputEmail">Email </label> -->
                 <input
                   type="email"
                   name="email"
                   class="form-control"
                   id="email"
                   aria-describedby="emailHelp"
-                  placeholder="Email"
+                  placeholder="Email" 
                 />
               </div>
               <div class="form-group">
-                <!-- <label for="textarea" class="text-white" id="message"
-                  >Message</label
-                > -->
                 <textarea
                   class="form-control"
                   name="message"
@@ -171,7 +163,6 @@
                   placeholder="Text"
                 ></textarea>
               </div>
-
               <div class="form-group">
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
